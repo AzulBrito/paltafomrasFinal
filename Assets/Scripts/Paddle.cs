@@ -34,7 +34,15 @@ public class Paddle : MonoBehaviour {
         }
         else
         {
-            return Input.mousePosition.x / Screen.width * screenWidthInUnits;
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                return (touch.position.x / Screen.width) * screenWidthInUnits;
+            }
+            else
+            {
+                return transform.position.x;
+            }
         }
     }
 
