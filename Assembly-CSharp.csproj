@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\GameSession.cs" />
     <Compile Include="Assets\Scripts\LoseCollider.cs" />
+    <Compile Include="Assets\Scripts\Optimizador.cs" />
     <Compile Include="Assets\Scripts\Level.cs" />
   </ItemGroup>
   <ItemGroup>
